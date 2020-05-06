@@ -25,7 +25,7 @@ validate_var <- function(data, validator, id) {
   }
 
   #Confrontar los datos con las reglas de validación establecidas
-  cf <- confront(data, validator , key = id)
+  cf <- validate::confront(data, validator , key = id)
 
   return(small_report(cf, id))
 }

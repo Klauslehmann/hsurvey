@@ -16,7 +16,7 @@ plot_results <- function(data, var) {
   plot <- data %>%
     group_by(!!x_var) %>%
     summarise(suma = n()) %>%
-    ggplot(aes(x = as.factor(!!x_var), y = suma)) +
+    ggplot2::ggplot(aes(x = as.factor(!!x_var), y = suma)) +
     ggtitle(paste("Resultados", var )) +
     geom_bar(stat = "identity") +
     geom_text(aes(label = suma),
