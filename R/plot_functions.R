@@ -5,7 +5,7 @@
 #' @param data Data frame
 #' @param var String. Variable del data frame a ser graficada
 #' @import dplyr
-#' @import ggplot
+#' @import ggplot2
 #' @export
 
 
